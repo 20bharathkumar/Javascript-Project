@@ -1,0 +1,94 @@
+
+
+.main{
+    border: 1px solid black;
+    width: 550px;
+    height: 50vh;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 2px 20px 10px 2px rgba(0, 0, 0, 0.614);
+}
+.head{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 30%;
+    
+}
+.head h2{
+    font-size: 1.4rem;
+}
+.head p{
+    font-size: 0.8rem;
+}
+.body1{
+    width: 100%;
+    height: 70%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.minbd{
+    width: 92%;
+    height: 90%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imge{
+    width: 40%;
+    height: 70%;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    background-image: url('/wp6421201-one-piece-4k-wallpapers.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.stmt{
+    width: 55%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.bars{
+    width: 100%;
+    height: 17%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.itm1{
+    width: 33.3%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid black;
+    /* padding-top: 3px; */
+    border-radius: 3px;
+    
+}
+.itm1 p{
+    padding-bottom: 5px;
+}
+.display{
+    width: 95%;
+    height: 75%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 5px;
+    
+}
+.display p{
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 5vh;
+    display: none;
+}
+#stm1{
+    display: block;
+}
+#stm2{
+    display: none;
+}
+#stm3{
+    display: none;
+}

@@ -1,0 +1,21 @@
+.container{
+    border: 1px solid black;
+    width: 95%;
+    margin: auto;
+    height: 95vh;
+    background-color: rgb(98, 227, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Time{
+    /* border: 1px solid black; */
+    display: flex;
+    padding: 0px 10px;
+    text-align: center;
+    
+}
+.Time h1{
+    padding: 0px 10px;
+    font-size: 5rem;
+}

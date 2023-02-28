@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+
+.header{
+    color: black;
+    background-color:rgb(206, 141, 94);
+}
+.push a{
+    font-family: 'Rubik Microbe', cursive;
+}
+.header2{
+    color: black;
+    background-color:rgb(206, 141, 94);
+}
+.header2 h1{
+    text-align: center;
+}
+.header h1{
+    text-align: center;
+}
+.push2 a{
+    font-family: 'Rubik Microbe', cursive;
+}
+a{
+    text-decoration: none;
+}

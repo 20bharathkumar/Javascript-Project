@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Dancing+Script&family=Lobster&family=Rubik+Microbe&display=swap");
+*{
+    margin: 0;
+}
+.header{
+    height: 610px;
+    background-color: rgb(178, 126, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.parent{
+    width: 40%;
+    height: 500px;
+    background-color: rgb(122, 67, 152);
+    border: 2px solid black;
+    border-radius: 7px;
+}
+.title{
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    margin-top: 30px;
+    font-weight: 50px;
+}
+.parent2{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Abel', sans-serif;
+    font-weight: 800;
+}
+.c1, .c2{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(191, 159, 216);
+    
+}
+
+.name input{
+    height: 30px;
+}
+.name2 input{
+    height: 30px;
+}
+.detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

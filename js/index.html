@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100%;
+        height: 50vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .border {
+        width: 100%;
+        border-top: 15px dashed white;
+      }
+      .img1 {
+        width: 270px;
+        position: absolute;
+        bottom: 61%;
+       left: 0;
+       transform: rotate(-19deg);
+       transition: 1s;
+      }
+      .img2{
+        animation:nandan 2s infinite alternate ease-in-out,ibrahim 2s infinite alternate ease-in-out;
+
+      }
+      @keyframes nandan {
+       0%{
+        transform: rotate(-19deg);
+left: 0;
+       }
+       50%{
+        transform: rotate(161deg);
+        left: 77%;
+bottom: 75%;
+       }
+       100%{  
+bottom: 75%;
+       }
+       
+      }
+      #btn1{
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #fff;
+      }
+      #btn2{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #fff;
+      }
+      .buttons{
+        background-image: url(./carinterior.jpg);
+        display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+      }
+      /* @keyframes ibrahim {
+        0%{
+            bottom: 61%;
+        }
+        50%{
+
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="border"></div>
+    </div>
+    <img class="img1" src="./cargadi-reL.png" alt="" />
+    <div class="buttons">
+        <button id="btn1" onclick="starting(this)">Start</button>
+        <button id="btn2" onclick="starting(this)">Stop</button>
+    </div>
+
+
+  </body>
+ <script>
+let start=document.getElementsByTagName("button")[0]
+let stop=document.getElementsByTagName("button")[1]
+
+let img=document.querySelector(".img1");
+function starting(ele){
+    console.log(ele.innerText);
+    if(ele.innerText==="Start"){
+        img.classList.add("img2")
+
+    }
+    else{
+        img.classList.remove("img2")
+
+    }
+}
+
+
+ </script>
+</html>

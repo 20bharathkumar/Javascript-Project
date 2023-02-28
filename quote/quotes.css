@@ -1,0 +1,37 @@
+
+
+
+
+.container{
+    width: 95%;
+    height: 92vh;
+    /* border: 1px solid black; */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.quote{
+    border: 10px solid rgb(241, 157, 126);
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn button{
+    background-color: aquamarine;
+    color: black;
+    height: 5vh;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

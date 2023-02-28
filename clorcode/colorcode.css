@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,200&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+    /* border: 1px solid black; */
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hex_clor{
+    /* border: 1px solid black; */
+    text-align: center;
+    
+}
+.hex_clor h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changeclor 5s infinite alternate;
+    font-family: 'Tourney', cursive;
+}
+.hex_clor h2{
+    font-size: 2rem;
+    margin-top: 60px;
+    font-family: 'Tourney', cursive;
+}
+.b1{
+    height: 2rem;
+    width: 8rem;
+    background-color: blue;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@keyframes changeclor{
+    0%{
+        color: aqua;
+    }
+    20%{
+        color: blueviolet;
+    }
+    40%{
+        color: chartreuse;
+    }
+    60%{
+        color: crimson;
+    }
+    80%{
+        color: yellow;
+    }
+    100%{
+        color: purple;
+    }
+}

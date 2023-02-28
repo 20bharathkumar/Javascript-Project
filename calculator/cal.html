@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="/cal.css">
+</head>
+<body>
+    <div class="name">
+        <h1>BASIC CALCULATOR</h1>
+    </div>
+    <div class="container">
+        <div class="cal_btns">
+            <input type="text" name="display" id="disp" class="dsp" placeholder="0">
+            <br>
+            <button class="btn" onclick="numb(1)">1</button>
+            <button class="btn" onclick="numb(2)">2</button>
+            <button class="btn" onclick="numb(3)">3</button>
+            <button class="btn" onclick="numb('+')" style="background-color: cornflowerblue;">+</button>
+            <br>
+            <button class="btn" onclick="numb(4)">4</button>
+            <button class="btn" onclick="numb(5)">5</button>
+            <button class="btn" onclick="numb(6)">6</button>
+            <button class="btn" onclick="numb('-')" style="background-color: rgb(114, 150, 216);">-</button>
+            <br>
+            <button class="btn" onclick="numb(7)">7</button>
+            <button class="btn" onclick="numb(8)">8</button>
+            <button class="btn" onclick="numb(9)">9</button>
+            <button class="btn" onclick="numb('*')" style="background-color: rgb(144, 172, 223);">*</button>
+            <br>
+            <button class="btn" onclick="numb('.')">.</button>
+            <button class="btn" onclick="numb(0)">0</button>
+            <button class="btn" onclick="cancel()">c</button>
+            <button class="btn" onclick="numb('/')" style="background-color: rgb(174, 191, 223);">/</button>
+            <br>
+            <button class="btneql" id="eql" onclick="equl()">=</button>
+        </div>
+    </div>
+</body>
+<script src="/cal.js"></script>
+</html>

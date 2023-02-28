@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Rubik+Microbe&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+}
+body{
+    overflow: auto;
+    
+}
+.header{
+    height: 650px;
+    background-image: url("https://wallpaperaccess.com/full/4500340.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(245, 245, 220, 0.68);
+    font-family: 'Bebas Neue', cursive;
+    text-align-last: center;
+    padding: 221px;
+    font-size: 50px;
+}
+.black{
+    width: 100%;
+    height: 100%;
+    background-color: #000000b0;
+   
+}
+.item1{
+    position: fixed;
+    background-color: white;
+    height: 10%;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: space-between;
+    color: red;
+}
+.title{
+    width: 200px;
+    height: 100%;
+    background-image: url('https://th.bing.com/th/id/OIP.xwZgtu1qMG26SfQvXVrx4wHaEK?pid=ImgDet&rs=1');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.label{
+    width: 700px;
+    height: 100%;
+    
+}
+.label ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.label ul li{
+    font-size: 20px;
+}
+.label ul li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.about h2{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: black;
+
+}
+.about{
+    width: 100%;
+    height: 600px;
+    background-image: url('/imgs/wallpapersden.com_one-punch-man-a-hero-nobody-knows_1920x1080.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+}
+.contacts h2{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    font-size: 50px;
+
+}
+.contacts{
+    width: 100%;
+    height: 600px;
+    background-image: url("https://wallpaperaccess.com/full/312712.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+}
+.casts h2{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    font-size: 50px;
+
+}
+.casts{
+    width: 100%;
+    height: 600px;
+    background-image: url('/imgs/one-punch-man-strongest-launch1.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+}
+.login h2{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 50px;
+
+}
+.login{
+    width: 100%;
+    height: 600px;
+    background-image: url('https://assets.onbuy.com/i11/product/98ef1242b10c402eb8d2b593cbbc62b5-l15598256/large-9-11-yrs-one-punch-man-silhouette-red-shadow-kids-varsity-jacket-7157762.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.label ul li a{
+    text-decoration: none;
+    color: red;
+}
+.items{
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+.input{
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    color: aliceblue;
+}
+.input .items1{
+    font-family: 'Bebas Neue', cursive;
+}
+.create{
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1vh;
+    color: aliceblue;
+}
+.word{
+    color: aliceblue;
+}
+
+
