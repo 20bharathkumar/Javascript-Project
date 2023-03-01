@@ -6,13 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/5d6ff2c02a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/popup.css">
+    <link rel="stylesheet" href="/popups/popup.css">
 </head>
 <body>
-    <div class="main">
-        <i class="fa-sharp fa-regular fa-wifi-slash"></i>
-        <div class="icn"><i class="fa-sharp fa-solid fa-wifi"></i></div>
+    <div class="container">
+        <div class="main">
+            <div class="icn"><i class="fa-solid fa-plane-up"></i></div>
+            <div class="stmt">
+                <h2>Disconnected</h2>
+                <h5>The wifi has been turned off reconnect in <b id="inc">10</b> secs</h5>
+                
+            </div>
+        </div>
+        <div class="connect">
+            <div class="icn2"><i class="fa-solid fa-wifi"></i></div>
+            <div class="stmt2">
+                <h2>Reconnected</h2>
+                <h5>Re-connected to the Internet</h5></div>
+        </div>
+    </div>
+    <div class="btn">
+        <button id="recnt">Disconnect</button>
     </div>
 </body>
-<script src="/popup.js"></script>
+<script src="/popups/popup.js"></script>
 </html>
