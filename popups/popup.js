@@ -5,22 +5,35 @@ const disconnect = document.querySelector(".main")
 console.log(nums);
 let count = 10;
 
-
+let cantim;
 btn.addEventListener("click", pop);
 var clicked = true;
 function pop(){
     if(!clicked){
-        count = 10;
+        count = 0
         clicked = true;
-        document.getElementById("recnt").innerHTML = "Disconnect";
+        btn.innerHTML = "Disconnect";
         disconnect.style.display = "none"
         connect.style.display = "flex"
         clearInterval(cot)
+        cantim = setInterval(can, 1000)
+        function can(){
+            if(count < 5){
+                count ++
+                console.log(count)
+            }
+            else{
+                connect.style.display = "none"
+            }
+        }
     }
     else{
+        clearInterval(cantim)
+        count = 10;
         clicked = false;
-        document.getElementById("recnt").innerHTML = "Reconnect";
-
+        btn.innerHTML = "Reconnect";
+        
+        
         disconnect.style.display = "flex"
         connect.style.display = "none"
 
