@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    position: relative;
+    background: rgb(115, 80, 147);
+    min-height: 100vh;
+}
+.wrapper{
+    display: grid;
+    padding: 35px;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, 260px);
+}
+.wrapper li{
+    height: 250px;
+    background: white;
+    list-style: none;
+    border-radius: 5px;
+    padding: 15px 20px 20px;
+}
+.adder,.icon, .tim,.minz .menu li,.container header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.adder,.icon{
+    flex-direction: column;
+    justify-content: center;
+}
+.adder .icon{
+    height: 70px;
+    width: 70px;
+    border: 2px dashed rgb(119, 119, 178);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: rgb(119, 119, 178);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.adder p{
+    color: rgb(119, 119, 178);
+    font-weight: 500;
+
+}
+.wrapper .nots{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nots p{
+    color: rgb(89, 50, 179);
+    font-size: 22px;
+    font-weight: 500;
+}
+.nots span{
+    color: rgb(146, 115, 216);
+    font-size: 16px;
+    display: block;
+    margin-top: 5px;
+}
+.nots .tim{
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+}
+.tim span{
+    color: rgb(155, 205, 221);
+    font-size: 14px;
+}
+.tim .minz i{
+    color: rgb(155, 205, 221);
+    font-size: 14px;
+}
+.minz{
+    position: relative;
+}
+.minz .menu{
+    position: absolute;
+    bottom: 0;
+    right: -2px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.2s linear;
+}
+.minz:hover .menu{
+    transform: scale(1);
+}
+
+.minz .menu li{
+    /* list-style: none; */
+    height: 25px;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 0.8rem;
+    justify-content: flex-start;
+}
+.minz .menu li i{
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+.menu li:hover{
+    background: rgb(215, 228, 233);
+}
+.up{
+    display: none;
+}
+.pop{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: #0000008c;
+}
+.pop .container{
+    background: white;
+    z-index: 1;
+    border-radius: 5px;
+}
+.pop .container header{
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+.container header p{
+    font-size: 1.2rem;
+}
+.container header i{
+    color: rgb(188, 155, 155);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.container form{
+    margin: 15px 25px 35px;
+}
+.container form :where(input,textarea){
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    outline: none;
+}
+.container input{
+    font-size: 22px;
+    font-weight: 500;
+}
+.container textarea{
+    font-size: 16px;
+    height: 20vh;
+}
+.container button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(172, 134, 229);
+    cursor: pointer;
+}
+.pop,.ete,.encls{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.pop.show{
+    opacity: 1;
+    pointer-events: auto;
+}
