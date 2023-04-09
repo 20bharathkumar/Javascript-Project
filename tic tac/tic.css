@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fjalla One', sans-serif;
+}
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.front{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 400px;
+    height: 200px;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background: rgb(126, 78, 172);
+    padding: 20px;
+}
+.front p{
+    /* text-align: center; */
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.front span{
+    /* text-align: center; */
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+.btns .btn{
+    width: 60px;
+    height: 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ply{
+    width: 65%;
+    height: 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: rgb(213, 204, 224);
+}
+.x:hover{
+    background: rgb(213, 204, 224);
+}
+.ply:hover{
+    background: rgb(213, 204, 224);
+}
+.playground{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: #1cb781;
+}
+.playground .turn{
+    display: flex;
+    margin-bottom: 20px;
+}
+.turn .x_turn{
+    width: 200px;
+    height: 40px;
+    /* background-color: aliceblue; */
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.turn .o_turn{
+    width: 200px;
+    height: 40px;
+    /* background-color: aliceblue; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.check_box{
+    width: 35%;
+    height: 73%;
+    /* background: white; */
+    /* border: 1px solid wheat; */
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    display: grid;
+    background: white;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 3.4rem;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playground{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.mark{
+    background: rgb(212, 204, 224);
+}
+.ground{
+    opacity: 1;
+    pointer-events: all;
+}
