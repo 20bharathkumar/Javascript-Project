@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://wallpaperaccess.com/full/2942814.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    width: 30%;
+    height: 80%;
+    background: rgb(239, 204, 204);
+    /* background-image: url("https://wallpaperaccess.com/full/3683685.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.searchbar{
+    height: 15%;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.searchbar input{
+    width: 70%;
+    height: 50%;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.searchbar .ic{
+    width: 35px;
+    height: 35px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.info{
+    width: 100%;
+    height: 70%;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 3.5rem;
+    gap: 35px;
+}
+.info .weather_image{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.weather_image img{
+    width: 120px;
+}
+.temp{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.city{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.val,.val2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.other_info{
+    width: 100%;
+    height: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border-bottom: 1px solid black; */
+}
+.humi{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+    font-weight: 700;
+}
+.wind{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid black;
+    font-weight: 700;
+}
